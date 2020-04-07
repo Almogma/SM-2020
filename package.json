@@ -1,0 +1,22 @@
+{
+  "name": "sm2020",
+  "version": "1.0.0",
+  "description": "A repository representing the project done under the Software Project course",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Almogma/Software-Management-2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Almogma/Software-Management-2020/issues"
+  },
+  "homepage": "https://github.com/Almogma/Software-Management-2020#readme"
+}
