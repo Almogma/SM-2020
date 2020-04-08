@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Almogma/Software-Management-2020#readme",
   "dependencies": {
-    "jest": "^25.2.7"
+    "jest": "^25.2.7",
+    "node": "^13.12.0"
   }
 }
