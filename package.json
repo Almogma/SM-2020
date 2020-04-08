@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
     "url": "https://github.com/Almogma/Software-Management-2020/issues"
   },
   "homepage": "https://github.com/Almogma/Software-Management-2020#readme",
-  "dependencies": {},
+  "dependencies": {
+    "mocha": "^7.1.1"
+  },
   "devDependencies": {
     "jest": "^25.2.7"
   }
