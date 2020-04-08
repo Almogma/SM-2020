@@ -14,9 +14,10 @@ jobs:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
           name: install-npm-wee
-          commands: npm install
-                    chmod +rwx ./node_modules/.bin/jest
-                    npm test
+          commands: 
+              - npm install
+              - chmod +rwx ./node_modules/.bin/jest
+              - npm test
       - save_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
           paths:
