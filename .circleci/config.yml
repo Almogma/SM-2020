@@ -13,7 +13,6 @@ jobs:
   deploy-job:
       docker:
         - image: circleci/node:13.12.0
-      working_directory: ./Software-Management-2020
       steps:
         - run:
             name: Deploy Master to Firebase
