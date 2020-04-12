@@ -10,11 +10,7 @@ jobs:
       - run: npx eslint test/
       - run: npm install
       - run: npm test
-      - run: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
-  deploy:
-    docker:
-      - image: circleci/node:13.12.0
-    steps:
-      - run: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+      - run: firebase deploy --token "$FIREBASE_TOKEN" --only hosting /public
+
 
 
