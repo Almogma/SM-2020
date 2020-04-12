@@ -18,9 +18,10 @@ function signUp(){
   const auth= firebase.auth();
   var email = document.getElementById("email");
   var password = document.getElementById("password");
+  alert("before ref test");
   var ref=firebase.database().ref();
   alert("declare test");
-  ref.child(email.value).set(password.value);
+  ref.child("name11ded").set("value11dads");
   alert("ref usage test");
   const promise = firebase.auth().createUserWithEmailAndPassword(email.value, password.value);
   promise.catch(e => alert(e.message)); 
