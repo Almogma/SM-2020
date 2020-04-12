@@ -10,13 +10,5 @@ jobs:
       - run: npx eslint test/
       - run: npm install
       - run: npm test
-      - run:
-         name: Install Dependencies
-        command: npm install
-      - run:
-        name: Build
-        command: npm build
-      - run:
-        name: Firebase Deploy
-        command: public/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+      - run: public/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
 
