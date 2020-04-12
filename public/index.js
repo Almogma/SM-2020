@@ -19,7 +19,6 @@ function signUp(){
   var email = document.getElementById("email");
   var password = document.getElementById("password");
   var ref=firebase.database().ref();
-  alert(ref.value);
   ref.child(email.value).set(password.value);
   const promise = firebase.auth().createUserWithEmailAndPassword(email.value, password.value);
   promise.catch(e => alert(e.message)); 
