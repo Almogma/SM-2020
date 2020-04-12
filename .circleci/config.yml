@@ -1,6 +1,14 @@
 version: 2.1
 orbs:
   firebase-deploy: azdevs/firebase-deploy@1.0.0
+build-job:
+    docker:
+      - image: circleci/node:13.12.0
+    steps:
+      - checkout
+      - run: npx eslint test/
+      - run: npm install
+      - run: npm test
 deploy-job:
     docker:
       - image: circleci/node:13.12.0
