@@ -10,6 +10,6 @@ jobs:
       - run: npx eslint test/
       - run: npm install
       - run: npm test
-      - run: /c/Users/yakir/AppData/Roaming/npm/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+      - run: C:/Users/yakir/AppData/Roaming/npm/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
 
 
