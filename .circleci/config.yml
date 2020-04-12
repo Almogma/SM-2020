@@ -28,4 +28,4 @@ jobs:
       - image: circleci/node:13.12.0
     steps:
       - checkout
-      - run: ./node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN --only hosting
+      - run: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --only hosting
