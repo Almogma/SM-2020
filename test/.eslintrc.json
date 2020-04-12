@@ -10,8 +10,16 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
-    "rules": {
-	"semi": ["error", "always"],
-        "quotes": ["error", "double"]
+	"plugins": [
+        "snakecasejs"
+    ],
+    "settings":
+    {
+        "snakecasejs/filter": ["ClassDeclaration", "NewExpression"],
+        "snakecasejs/whitelist": ["externalPath", "setNumber"]
+    },
+    "rules":
+    {
+        "snakecasejs/snakecasejs": "error"
     }
 }
