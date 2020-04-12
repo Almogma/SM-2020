@@ -10,10 +10,9 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
-    "plugins": [
-        "eslint-snake-case"
-    ]
+	
     "rules": {
-        "eslint-snake-case/rule-name": 2
+	"semi": ["error", "always"],
+        "quotes": ["error", "double"]
     }
 }
