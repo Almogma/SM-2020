@@ -10,5 +10,6 @@ jobs:
       - run: npx eslint test/
       - run: npm install
       - run: npm test
-      - run: public/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+      - run: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
+
 
