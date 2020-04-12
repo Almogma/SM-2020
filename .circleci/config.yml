@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run: npx eslint test/
       - run: npm install
-      - run: npm 
+      - run: npm test
       - run: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
   deploy:
     docker:
