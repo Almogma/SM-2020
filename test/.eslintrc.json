@@ -1,14 +1,19 @@
 {
-    "plugins": [
-        "snakecasejs"
-    ],
-    "settings":
-    {
-        "snakecasejs/filter": ["ClassDeclaration", "NewExpression"],
-        "snakecasejs/whitelist": ["externalPath", "setNumber"]
+    "env": {
+        "browser": true,
+        "es6": true
     },
-    "rules":
-    {
-        "snakecasejs/snakecasejs": "error"
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "plugins": [
+        "eslint-snake-case"
+    ]
+    "rules": {
+        "eslint-snake-case/rule-name": 2
     }
 }
