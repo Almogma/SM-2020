@@ -14,8 +14,9 @@ jobs:
         root: .
         paths:
             - .
-       - attach_workspace:
-         at: .
+   deploy:
+      - attach_workspace:
+        at: .
       - run: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
 
 
