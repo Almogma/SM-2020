@@ -10,10 +10,5 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
-    "plugins": [
-        "eslint-snake-case"
-    ],
-    "rules": {
-	"eslint-snake-case/rule-name": 2
-    }
+	"extends": "eslint:recommended"
 }
