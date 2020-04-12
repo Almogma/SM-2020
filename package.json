@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Almogma/Software-Management-2020#readme",
   "dependencies": {
     "chai": "^4.2.0",
+    "eslint-plugin-snakecase": "0.0.1",
     "mocha": "^7.1.1"
   },
   "devDependencies": {
