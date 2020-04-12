@@ -1,16 +1,21 @@
+/*eslint no-empty: "error"*/
+
 if (foo) {
+    // empty
 }
 
 while (foo) {
-}
-
-switch(foo) {
+    /* empty */
 }
 
 try {
     doSomething();
-} catch(ex) {
+} catch (ex) {
+    // continue regardless of error
+}
 
+try {
+    doSomething();
 } finally {
-
+    /* continue regardless of error */
 }
