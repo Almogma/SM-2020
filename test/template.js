@@ -1,21 +1,6 @@
-/*eslint no-empty: "error"*/
+const foo = 1;
+let bar = foo;
 
-if (foo) {
-    // empty
-}
+bar = 9;
 
-while (foo) {
-    /* empty */
-}
-
-try {
-    doSomething();
-} catch (ex) {
-    // continue regardless of error
-}
-
-try {
-    doSomething();
-} finally {
-    /* continue regardless of error */
-}
+console.log(foo, bar); // => 1, 9
